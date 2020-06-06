@@ -1,0 +1,119 @@
+/* 
+* {
+    color: aqua;
+} */
+
+/* entire docuemnt */
+body {
+    background-color: cyan;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+
+
+
+}
+/*  Header */
+
+header {
+    margin: 0px auto;
+    width: 960px;
+    background-color: darkgreen;
+    height: 175px;
+
+}
+
+
+header>img {
+    height: 150px ;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+
+}
+header > nav {
+    float: right;
+    
+
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    width: 100px;
+    border: 1px solid black;
+    margin-right: 30px;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+header > nav > ul > li> a {
+    color: inherit;
+    
+}
+
+
+/* Main area */
+
+main{
+    margin: 0px auto;
+    width: 960px;
+    background-color: rgb(90, 138, 90);
+}
+
+section {
+   /* Fun Facts */
+    width: 300px;
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 25px;
+    text-align: left;
+
+
+}
+/* main hero and description */
+#description{
+    width: 600px;
+    display: inline-block;
+    border: 2px dotted black;
+    margin-top: 5px;
+    padding: 10px;
+    text-align: justify;
+
+}
+#desscription > img {
+    border: blue;
+    margin: 100px;
+    float: right;
+
+}
+
+/* footer alignment */
+
+footer {
+    margin: 0px auto;
+
+    width: 960px;
+    background-color: darkgreen;
+     
+
+}
+
+footer > nav {
+    float: left;
+    background-color: blue;
+
+}
+footer > nav> ul > li>{
+    display: inline-block;
+    width: 100px;
+    border: 1px solid black;
+    margin-right: 30px;
+    border-radius: 25px;
+    text-align: center;
+}
