@@ -61,59 +61,74 @@ header > nav > ul > li> a {
 /* Main area */
 
 main{
-    margin: 0px auto;
+    margin: 0px auto; 
     width: 960px;
     background-color: rgb(90, 138, 90);
+    
 }
 
 section {
    /* Fun Facts */
-    width: 300px;
+    width: 150px;
     display: inline-block;
     border: 1px solid red;
-    border-radius: 25px;
     text-align: left;
+    font-size: 10px;
+    vertical-align: top;
+    padding: 5px;
+    font-weight: bolder;
+    
 
 
+}
+#funphoto {
+    height: 150px;
 }
 /* main hero and description */
 #description{
-    width: 600px;
+    width: 660px;
     display: inline-block;
     border: 2px dotted black;
     margin-top: 5px;
-    padding: 10px;
+    padding: 20px;
     text-align: justify;
+    font-size: 14px;
+    font-weight: lighter;
 
 }
-#desscription > img {
-    border: blue;
-    margin: 100px;
-    float: right;
 
+#hero{
+    float: right;
+    height: 300px;
+    padding: 10px;
+    border-width: 5px;
 }
 
 /* footer alignment */
 
 footer {
     margin: 0px auto;
-
     width: 960px;
     background-color: darkgreen;
-     
+    height: 75px;    
 
 }
 
 footer > nav {
     float: left;
-    background-color: blue;
-
 }
-footer > nav> ul > li>{
+
+footer > nav > ul > li {
     display: inline-block;
-    width: 100px;
-    border: 1px solid black;
-    margin-right: 30px;
-    border-radius: 25px;
+    width: 75px;
+    margin-right: 10px;
     text-align: center;
+
+    
+}
+
+
+footer > p {
+    float: right;
+    padding: 10px;
 }
