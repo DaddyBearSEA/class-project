@@ -53,12 +53,12 @@ function likePanda() {
     
 
     } else if (preference === 'no') {
-        window.location.replace('http://google.com');
+        window.location.replace('https://tenor.com/view/futurama-hypnotoad-hypnotic-hypno-all-hail-hypnotoad-gif-3690710');
 
     } else if (preference === 'No') {
-        window.location.replace('http://google.com');
+        window.location.replace('https://tenor.com/view/futurama-hypnotoad-hypnotic-hypno-all-hail-hypnotoad-gif-3690710');
     } else {
-        message = "Hello"
+        message = "See Ya Later!"
     }
 
     return document.write('<h3>' + message + '</h3>');

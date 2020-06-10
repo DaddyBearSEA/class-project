@@ -1,14 +1,11 @@
-/* 
-* {
-    color: aqua;
-} */
+
 
 /* entire docuemnt */
 body {
-    background-color: cyan;
+    /* background-color: cyan; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: darkblue;
-   
+    color: rgb(15, 15, 20); 
+    background-image: url("images/bambooforrest.jpg");   
 
 }
 /*  Header */
@@ -16,7 +13,8 @@ body {
 header {
     margin: 0px auto;
     width: 960px;
-    background-color: darkgreen;
+    /* background-color: darkgreen;   */
+    background-color: rgba(0,100,0, .85);
     height: 175px;
 
 }
@@ -44,7 +42,7 @@ header > nav {
 header > nav > ul > li {
     display: inline-block;
     width: 100px;
-    border: 1px solid black;
+    border: 2px solid black;
     margin-right: 30px;
     border-radius: 25px;
     text-align: center;
@@ -62,7 +60,7 @@ header > nav > ul > li> a {
 main{
     margin: 0px auto; 
     width: 960px;
-    background-color: rgb(90, 138, 90);
+    background-color: rgba(90, 138, 90, .95);
     
 }
 
@@ -108,7 +106,8 @@ section {
 footer {
     margin: 0px auto;
     width: 960px;
-    background-color: darkgreen;
+    /* background-color: darkgreen; */
+    background-color: rgba(0,100,0, .85);
     height: 75px;    
 
 }
