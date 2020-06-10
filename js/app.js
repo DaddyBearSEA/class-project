@@ -2,12 +2,50 @@
 //insert ask-name into a function
 // insert into code and render results
 
-function askName() {
-    var username = prompt('What is your Panda Name?');
 
-    return document.write('<h3>Hello ' + username + '</h3>');
+function pandaName (){
+
+    var firstInitial = prompt("What is your initial of your First Name A, B, C, or R" );
+    var lastInitial = prompt("What is the initial of your Last Name? A, B, C, or G");
+    var firstPanda;
+    var lastPanda;
+    
+
+    while (firstInitial !== "A" && firstInitial !=="B" && firstInitial !=="C" && firstInitial !=="R" ){
+        firstInitial = prompt( "First Initial needs to be an A or B or C or R");
+    }
+
+    if (firstInitial === 'A'){
+        firstPanda = 'Ling';
+    }else if (firstInitial === 'B'){
+        firstPanda = 'Bam';
+    }else if (firstInitial === 'C'){
+        firstPanda = 'Pang';
+    }else if (firstInitial === 'R'){
+        firstPanda = 'Pow';
+    }
+
+    while (lastInitial !== "A" && lastInitial !=="B" && lastInitial !=="C" && lastInitial !=="G" ){
+        lastInitial = prompt( "Last Initial needs to be an A or B or C or G");
+    }
+
+    if (lastInitial === 'A'){
+        lastPanda = 'Lang';
+    }else if (lastInitial === 'B'){
+        lastPanda = 'Chen';
+    }else if (lastInitial === 'C'){
+        lastPanda = 'La';
+    }else if (lastInitial === 'G'){
+        lastPanda = 'Fui';
+    }
+
+    return document.write('<h2>Your Panda Name<br> ' + firstPanda + ' '+ lastPanda + '</h3><br>');
 
 }
+
+
+
+
 
 // step 2
 // insert welcome into a funciont
@@ -20,7 +58,7 @@ function welcomeTime() {
     var hourNow = today.getHours();
     var greeting;
 
-    if (hourNow > 18) {
+    if (hourNow >= 18) {
         greeting = 'Good Evening!';
     } else if (hourNow > 12) {
         greeting = 'Good Afternoon!';
@@ -36,7 +74,7 @@ function welcomeTime() {
 
 // step 3
 // Preference on Pandas then send them to another website
-
+// something is not correct here and you get see you later if preference isn't typed correcly
 
 function likePanda() {
 
@@ -47,11 +85,7 @@ function likePanda() {
         message = 'Welcome to Calgary Pandas';
     } else if (preference === 'yes') {
         message = 'Welcome to Calgary Pandas';
-
-    } else if (preference === ' ') {
-        message = 'Welcome to Calgary Pandas';
-    
-
+  
     } else if (preference === 'no') {
         window.location.replace('https://tenor.com/view/futurama-hypnotoad-hypnotic-hypno-all-hail-hypnotoad-gif-3690710');
 
@@ -66,46 +100,15 @@ function likePanda() {
 
 
 
+function Paws(){
+    var answer=''
+    var pawPrint = '<img src="images/pandapaw.png" height="100px">';
+    var pickNumber = prompt('Pick a number between 1- 5');
+  
+    for (var i = 0; i < pickNumber; i++){
+      answer = answer + pawPrint;
+    }
+  
+    return document.write(answer);
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-// function logger() {
-//     var message = 'Hello World'
-//     // console.log (message);
-//     return messasge
-// }
-
-// logger()
-
-
-// function logUsername(username) {
-//     var message ('hello ' + username + '!');
-//     return message;
-
-// }
-// logUsername("Michael");
-
-
-// // psuedo code
-
-// // camelCase
-// // js is the standard  askNameExamle
-
-// //  let's build a cake making function
-
-// var buildCake = function(cakeType, fronsting, filling)[
-//     var message= ('I want a "+ cakeType + ' white cake icesd with lavendare fronsting and filled with lemoncustard!');
-//     return message
-// ]
-
-// buildCake('white', 'lavender', 'lemon custard');
